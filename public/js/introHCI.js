@@ -26,8 +26,8 @@ function addProjectDetails(e) {
 	// get rid of 'project' from the front of the id 'project3'
 	var idNumber = projectID.substr('project'.length);
 	console.log("User clicked on project " + idNumber);
-	$.get("http://localhost:3000/project/"+idNumber, callBackFn);
-	console.log("http://localhost:3000/project/"+idNumber);
+	$.get("https://lab6-julieyu.herokuapp.com/project/"+idNumber, callBackFn);
+	console.log("https://lab6-julieyu.herokuapp.com/project/"+idNumber);
 }
 
 function callBackFn(resp){
